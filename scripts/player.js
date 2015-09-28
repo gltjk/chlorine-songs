@@ -25,7 +25,8 @@ jQuery(document).ready(function() {
         $('.player .artist').text(artist);
         $('.player .cover').css('background-image','url(images/music/' + cover+'.jpg)');;
 
-        song = new Audio('http://storage.live.com/items/fa8f1f2a68dd2524%' + url + '?hiadmin.mp3');
+        if (url.length<10) song = new Audio('http://storage.live.com/items/fa8f1f2a68dd2524%' + url + '?hiadmin.mp3');
+        else song = new Audio(url);
 
         // timeupdate event listener
         song.addEventListener('timeupdate',function (){
