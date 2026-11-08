@@ -1,0 +1,7 @@
+name = "chlorine-songs"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-10-15"
+
+[[r2_buckets]]
+binding = "AUDIO_BUCKET"
+bucket_name = "chlorine-songs-audio"
